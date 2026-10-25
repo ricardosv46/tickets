@@ -1,0 +1,25 @@
+# Dependencias y builds
+node_modules/
+dist/
+.angular/
+
+# Terraform: el estado puede contener datos sensibles
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+
+# Salidas locales
+infra-practica/salida/
+api/*.zip
+
+# Material de estudio personal
+GUIA.md
+NOTAS.md
+
+# Herramientas locales
+.claude/
+.vscode/
+.DS_Store
+Thumbs.db
