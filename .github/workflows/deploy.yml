@@ -57,6 +57,7 @@ jobs:
           aws s3 sync dist/tickets/browser s3://${{ vars.S3_BUCKET }} \
             --delete \
             --exclude "index.html" \
+            --exclude "staticwebapp.config.json" \
             --cache-control "public,max-age=31536000,immutable"
 
       - name: Subir index.html (sin caché)
